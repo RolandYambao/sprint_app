@@ -73,3 +73,23 @@ Redundant.create({
     .catch(function (err) {
         console.log('ERROR with adding new Redundancy', error);
     });
+
+/************************************************************/
+// [R]ead
+// findAll Redundancies
+Redundant.findAll()
+    .then(function (redundantArray) {
+        console.log('ALL REDUNDANCIES ARE HERE')
+        for (let i = 0; i < redundantArray; i++) {
+            console.log(redundantArray[i])
+        }
+    })
+Redundant.findAll()
+    .then(function (redundantArray) {
+        console.log('ALL BLOAT REDUNDANCIES ARE HERE')
+        for (let i = 0; i < redundantArray; i++) {
+            if (redundantArray[i].purpose == 'Bloat') {
+                console.log(redundantArray[i])
+            }
+        }
+    })
