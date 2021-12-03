@@ -145,7 +145,7 @@ app.get('/redundant', function (req, res) {
 // redundant.destroy({
 //     where: {
 //         name: 'Thing',
-//         thing: 'Maybe Something',
+//         thing: 'Mass',
 //         number: 642,
 //         purpose: 'Unknown',
 //     }
