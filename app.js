@@ -93,3 +93,16 @@ Redundant.findAll()
             }
         }
     })
+
+/************************************************************/
+// [U]pdate
+// update Redundancy
+money.update({
+    thing: 'Mass'
+}, {
+    where: {
+        name: 'Thing'
+    }
+}).then(function (redundancyChanged) {
+    console.log('UPDATED REDUNDANCY', redundancyChanged)
+});
