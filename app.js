@@ -1,11 +1,11 @@
-const { Redundant } = require('./models');
+const { redundant } = require('./models');
 
 // Implement CRUD
 
 /************************************************************/
 // [C]reate
 // Redundant 1
-Redundant.create({
+redundant.create({
     name: 'Void',
     thing: 'Something',
     number: 234,
@@ -19,7 +19,7 @@ Redundant.create({
     });
 
 // Redundant 2
-Redundant.create({
+redundant.create({
     name: 'Thing',
     thing: 'Maybe Something',
     number: 642,
@@ -33,7 +33,7 @@ Redundant.create({
     });
 
 // Redundant 3
-Redundant.create({
+redundant.create({
     name: 'Another',
     thing: 'Object',
     number: 426,
@@ -47,7 +47,7 @@ Redundant.create({
     });
 
 // Redundant 4
-Redundant.create({
+redundant.create({
     name: 'Office',
     thing: 'Sinecure',
     number: 943,
@@ -61,7 +61,7 @@ Redundant.create({
     });
 
 // Redundant 5
-Redundant.create({
+redundant.create({
     name: 'Other',
     thing: 'Stuff',
     number: 134,
@@ -77,14 +77,14 @@ Redundant.create({
 /************************************************************/
 // [R]ead
 // findAll Redundancies
-Redundant.findAll()
+redundant.findAll()
     .then(function (redundantArray) {
         console.log('ALL REDUNDANCIES ARE HERE')
         for (let i = 0; i < redundantArray; i++) {
             console.log(redundantArray[i])
         }
     })
-Redundant.findAll()
+redundant.findAll()
     .then(function (redundantArray) {
         console.log('ALL BLOAT REDUNDANCIES ARE HERE')
         for (let i = 0; i < redundantArray; i++) {
@@ -97,7 +97,7 @@ Redundant.findAll()
 /************************************************************/
 // [U]pdate
 // update Redundancy
-money.update({
+redundant.update({
     thing: 'Mass'
 }, {
     where: {
@@ -110,7 +110,7 @@ money.update({
 /************************************************************/
 // [D]elete
 // destroy Redundancy
-Redundant.destroy({
+redundant.destroy({
     where: {
         name: 'Thing',
         thing: 'Maybe Something',
