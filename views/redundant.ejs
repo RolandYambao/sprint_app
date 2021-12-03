@@ -7,8 +7,8 @@
     <title>All Redundancies</title>
 </head>
 <body>
-    <% for (let index = 0; index < redundancies.length; index++) { %>
-        <% let r = redundancies[index]; %>
+    <% for (let index = 0; index < redundant.length; index++) { %>
+        <% let r = redundant[index]; %>
         <% r = r.toJSON() %>
         <p> <%= r.name %> </p>
     <% } %> 
