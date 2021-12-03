@@ -25,7 +25,7 @@ app.get('/redundant', function (req, res) {
     redundant.findAll()
         .then(function (redundantList) {
             console.log('FOUND ALL REDUNDANCIES', redundantList);
-            res.render('redundancies', { redundancies: redundantList });
+            res.render('redundant', { redundant: redundantList });
         })
         .catch(function (err) {
             console.log('ERROR', err);
