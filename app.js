@@ -103,6 +103,20 @@ money.update({
     where: {
         name: 'Thing'
     }
-}).then(function (redundancyChanged) {
-    console.log('UPDATED REDUNDANCY', redundancyChanged)
+}).then(function (redundantChanged) {
+    console.log('UPDATED REDUNDANCY', redundantChanged)
+});
+
+/************************************************************/
+// [D]elete
+// destroy Redundancy
+Redundant.destroy({
+    where: {
+        name: 'Thing',
+        thing: 'Maybe Something',
+        number: 642,
+        purpose: 'Unknown',
+    }
+}).then(function (redundantDeleted) {
+    console.log('DELETED REDUNDANCY', redundantDeleted)
 });
